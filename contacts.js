@@ -3,7 +3,7 @@ import path from "path";
 
 const contactsPath = path.join("./db", "contacts.json");
 
-function listContacts(msg) {
+function listContacts() {
   fs.readFile(contactsPath, (err, data) => {
     if (err) {
       console.error(err.message);
@@ -11,7 +11,6 @@ function listContacts(msg) {
     }
     console.table(JSON.parse(data));
   });
-  // console.log(msg);
 }
 
 function getContactById(contactId) {
