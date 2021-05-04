@@ -6,7 +6,6 @@ import {
 } from "./contacts.js";
 
 // const md = require("./contacts");
-// md.listContacts("hi");
 
 import commander from "commander";
 const { program } = commander;
