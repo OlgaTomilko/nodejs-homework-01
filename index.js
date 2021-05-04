@@ -8,9 +8,6 @@ import {
 // const md = require("./contacts");
 // md.listContacts("hi");
 
-// addContact("zara", "zara@gmail.com", 900990);
-// removeContact(11);
-
 import commander from "commander";
 const { program } = commander;
 
@@ -25,7 +22,6 @@ program.parse(process.argv);
 
 const argv = program.opts();
 
-// TODO: рефакторить
 function invokeAction({ action, id, name, email, phone }) {
   switch (action) {
     case "list":
